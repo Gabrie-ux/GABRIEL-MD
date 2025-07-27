@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   let totalreg = Object.keys(global.db.data.users).length;
   let totalchats = Object.keys(global.db.data.chats).length;
   let vs = global.vs || '1.0.0';
-  let pp = "https://files.catbox.moe/3pdlhr.png";
+  let pp = "https://qu.ax/GszaU.png";
 
   // Tiempo de actividad
   if (process.send) {

@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
   const gp1 = 'https://chat.whatsapp.com/Fl22Fx2sMatAe1jDN8lk9y?mode=ac_t' // ← tu link real
 
   const namechannel = 'Canal de la Bot'
-  const channel = 'https://whatsapp.com/channel/0029VbAZcyIIXnlwp79iwu2l' // ← tu canal real
+  const channel = 'https://whatsapp.com/channel/0029VbAIBneK0IBjjFDyMn31' // ← tu canal real
 
   const dev = '💎 Creador: Gabriel ofc'
   const catalogo = 'https://qu.ax/GszaU.png' // o './media/grupos.jpg'

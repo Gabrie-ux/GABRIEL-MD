@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       global.bannerUrls[conn.user.jid] = 'https://qu.ax/XkPVZ.jpg'; // URL inicial de la imagen del menú
     }
     if (!global.botNames[conn.user.jid]) {
-      global.botNames[conn.user.jid] = 'Makima'; // Nombre inicial del bot
+      global.botNames[conn.user.jid] = 'ELISABET'; // Nombre inicial del bot
     }
 
     // Verificar si el usuario es el socket activo
@@ -26,33 +26,33 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
     // Comando para cambiar el banner (solo permitido para el socket activo)
     if (command === 'setbanner') {
       if (!isSocketActive) {
-        return await m.reply('「🩵」Este comando solo puede ser usado por el socket.', m);
+        return await m.reply('「⚡」Este comando solo puede ser usado por el socket.', m);
       }
       if (!text) {
         return await m.reply('✘ Por favor, proporciona un enlace válido para la nueva imagen del banner.', m);
       }
       global.bannerUrls[conn.user.jid] = text.trim(); // Actualiza el banner solo para esta sesión
-      return await m.reply('「🩵」El banner fue actualizado con éxito...', m);
+      return await m.reply('「⚡」El banner fue actualizado con éxito...', m);
     }
 
     // Comando para cambiar el nombre del bot (solo permitido para el socket activo)
     if (command === 'setname') {
       if (!isSocketActive) {
-        return await m.reply('「🩵」Este comando solo puede ser usado por el socket.', m);
+        return await m.reply('「⚡」Este comando solo puede ser usado por el socket.', m);
       }
       if (!text) {
-        return await m.reply('「🩵」¿Qué nombre deseas agregar al socket?', m);
+        return await m.reply('「⚡」¿Qué nombre deseas agregar al socket?', m);
       }
       global.botNames[conn.user.jid] = text.trim(); // Actualiza el nombre solo para esta sesión
-      return await m.reply('「🩵」El nombre fue actualizado con éxito...', m);
+      return await m.reply('「⚡」El nombre fue actualizado con éxito...', m);
     }
 
     // Comandos para el menú y "CARGANDO COMANDOS" (pueden ser usados por cualquier usuario)
     if (command === 'menu' || command === 'help' || command === 'menú') {
       // Variables para el contexto del canal
-      const dev = 'Félix Manuel';
+      const dev = 'GABRIEL-OFC';
       const redes = 'https://github.com/Andresv27728/2.0';
-      const channelRD = { id: "120363400360651198@newsletter", name: "MAKIMA - FRASES" };
+      const channelRD = { id: "120363418542108786@newsletter", name: "ELISABET -MD" };
       let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
       let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.catbox.moe/mqtxvp.jpg');
 
@@ -95,14 +95,14 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       let uptime = clockString(_uptime);
       let totalreg = Object.keys(global.db.data.users).length;
       let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
-      const emojis = '🩵';
+      const emojis = '⚡';
       const error = '❌';
 
       let botname = global.botNames[conn.user.jid]; // Nombre del bot específico para esta sesión
       let menu = `¡Hola! ${taguser} soy ${botname}  ${(conn.user.jid == global.conn.user.jid ? '(OficialBot)' : '(Sub-Bot)')} 
 
 ╭━━I N F O-B O-T━━
-┃Creador: 𓆩‌۫᷼ ִֶָღܾ݉͢ғ꯭ᴇ꯭፝ℓɪ꯭ͨא𓆪
+┃Creador: 𓆩‌۫᷼ ִֶָGABRIEL𓆪
 ┃Tiempo activo: ${uptime}
 ┃Baileys: Multi device
 ┃Moneda actual: ${moneda}

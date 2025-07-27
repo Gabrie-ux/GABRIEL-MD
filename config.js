@@ -18,7 +18,7 @@ global.botNumber = '' //Ejemplo: 527222519827
 global.owner = [
   ['18293142989', '🩵 𝗖𝗿𝗲𝗮𝗱𝗼𝗿 🩵', true],
   ['18293142989', 'f', true],
-  ['527222518356', 'México', true]
+  ['51941247696', 'peru', true]
 ]
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
@@ -47,17 +47,17 @@ global.makiJadibts = true
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
-global.packsticker = `─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\nBot: Makima Bot MD\n\nCreador: Félix Manuel\n\nTipo: Público\n\nUsuarios: 10927\n─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\n\n`
-global.packname = `⏤͟͞ू⃪  ̸̷͢Makima 𝐁𝐨𝐭𑁯ᰍ`
+global.packsticker = `─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\nBot: ELISABET⚡ MD\n\nCreador: GABRIEL-OFC\n\nTipo: Público\n\nUsuarios: 10927\n─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\n\n`
+global.packname = `⏤͟͞ू⃪  ̸̷͢ELISABET BOT𑁯ᰍ`
 global.author = `𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐬 𝐁𝐲 Deymoom Club`;
 global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Deymoon Club';
-global.titulowm = '⏤͟͞ू⃪Makima 𝐁𖹭t͟𑁯ᰍ';
+global.titulowm = '⏤͟͞ू⃪ELISABET ⚡𑁯ᰍ';
 global.igfg = 'Deymoon Club'
-global.botname = 'Makima 𝐁𝐨𝐭 𝐌𝐃'
+global.botname = 'ELISABET⚡ OFC'
 global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Deymoon Club'
 global.textbot = 'Mak𝐢 : DEYMOON CLUB'
 global.gt = '͟͞𝐃𝐞𝐧𝐣𝐢';
-global.namechannel = 'Mak𝐢 𝐂𝐡a͟𝐧n͟e͟𝐥𑁯'
+global.namechannel = 'ELISABET CHANNEL🗣️𑁯'
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 

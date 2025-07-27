@@ -11,7 +11,7 @@ Personalizaciones para Subbots:
 
 Pronto añadiremos más personalizaciones para que puedan cambiar la moneda y el welcome que quieran.
 
-> MAKIMA PROYECT
+> ELISABET PROYECT
 `.trim();
 
     // Enviar el mensaje al chat

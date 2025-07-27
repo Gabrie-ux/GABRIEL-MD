@@ -47,7 +47,7 @@ let handler = async (m, { conn }) => {
 ⚡𝖱𝖺𝗇𝗀𝗈: ${rangoMagico}
 ⚡𝖥𝖾𝖼𝗁𝖺: ${new Date().toLocaleString('es-ES')}
 ╰━━━━━━━━━━━━━━━━━━
-> © Desarrollado por Félix Y Gabriel
+> © Desarrollado por Gabriel -ofc
 ╰━━━━━━━━━━━━━━━━━━`.trim()
 
   // MENSAJE CON CONTEXTO DE CANAL/NEWSLETTER (igual que el menú)

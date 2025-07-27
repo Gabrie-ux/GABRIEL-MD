@@ -15,10 +15,10 @@ const jugadores = [
   { nombre: "Ronaldo", valor: 100, url: "https://qu.ax/jDVGs.jpg" }
 ];
 
-const channelRD = { id: "120363400360651198@newsletter", name: "MAKIMA - FRASES" };
+const channelRD = { id: "120363418542108786@newsletter", name: "ELISABET - BOT ⚡" };
 const MAKIMA_ICON = "https://qu.ax/dXOUo.jpg";
-const GITHUB_MAKIMA = "https://github.com/mantis-has/Makima";
-const NEWSLETTER_TITLE = '🩵 MAKIMA BOT MD 🩵';
+const GITHUB_ELISABET = "https://github.com/mantis-has/ELISABET";
+const NEWSLETTER_TITLE = '⚡ ELISABET⚡';
 const SOC_CLAIM_TIMEOUT = 3 * 60 * 1000; // 3 minutos
 
 let soccerStorage = global.db.data.soccer || (global.db.data.soccer = {});
@@ -37,14 +37,14 @@ let handler = async (m, { conn, command, args }) => {
       return m.reply('No hay jugador disponible para reclamar o ya expiró.');
     if (soccer.owner) {
       let ownerName = await conn.getName(soccer.owner);
-      return await sendNewsletter(conn, m.chat, `「🩵」Este jugador ya fue reclamado por ${ownerName}.`, m);
+      return await sendNewsletter(conn, m.chat, `「⚡」Este jugador ya fue reclamado por ${ownerName}.`, m);
     }
     if (!user || user.exp < soccer.valor)
-      return await sendNewsletter(conn, m.chat, `「🩵」No tienes suficiente XP para reclamar este jugador.`, m);
+      return await sendNewsletter(conn, m.chat, `「⚡」No tienes suficiente XP para reclamar este jugador.`, m);
     soccer.owner = m.sender;
     if (!user.soccerPlayers) user.soccerPlayers = [];
     user.soccerPlayers.push(soccer.nombre);
-    await sendNewsletter(conn, m.chat, `「🩵」¡Reclamaste a ${soccer.nombre}!`, m);
+    await sendNewsletter(conn, m.chat, `「⚡」¡Reclamaste a ${soccer.nombre}!`, m);
     return;
   }
 
@@ -96,8 +96,8 @@ async function sendNewsletter(conn, chat, text, quoted = null) {
       externalAdReply: {
         title: NEWSLETTER_TITLE,
         body: channelRD.name,
-        thumbnailUrl: MAKIMA_ICON,
-        sourceUrl: GITHUB_MAKIMA,
+        thumbnailUrl: ELISABET_ICON,
+        sourceUrl: GITHUB_ELISABET,
         mediaType: 1,
         renderLargerThumbnail: false
       }
@@ -118,8 +118,8 @@ function newsletterContext(mentioned = []) {
     externalAdReply: {
       title: NEWSLETTER_TITLE,
       body: channelRD.name,
-      thumbnailUrl: MAKIMA_ICON,
-      sourceUrl: GITHUB_MAKIMA,
+      thumbnailUrl: ELISABET_ICON,
+      sourceUrl: GITHUB_ELISABET,
       mediaType: 1,
       renderLargerThumbnail: false
     }

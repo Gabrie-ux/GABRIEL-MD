@@ -47,16 +47,16 @@ global.makiJadibts = true
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 
 global.packsticker = `─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\nBot: ELISABET⚡ MD\n\nCreador: GABRIEL-OFC\n\nTipo: Público\n\nUsuarios: 10927\n─✰─ׄ─ׅ─ׄ─✰─ׄ─✰─ׄ✰─ׄ\n\n`
-global.packname = `⏤͟͞ू⃪  ̸̷͢ELISABET BOT𑁯ᰍ`
-global.author = `𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐬 𝐁𝐲 Deymoom Club`;
-global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Deymoon Club';
+global.packname = `⏤͟͞ू⃪  ̸̷͢ELIASABET MD𑁯ᰍ`
+global.author = `𝐒𝐭𝐢𝐜𝐤𝐞𝐫𝐬 𝐁𝐲 GABRIEL`;
+global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 ELISABET Club';
 global.titulowm = '⏤͟͞ू⃪ELISABET ⚡𑁯ᰍ';
 global.igfg = 'Deymoon Club'
-global.botname = 'ELISABET⚡ OFC'
+global.botname = 'ELISABET ⚡'
 global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Deymoon Club'
 global.textbot = 'Mak𝐢 : DEYMOON CLUB'
 global.gt = '͟͞𝐃𝐞𝐧𝐣𝐢';
-global.namechannel = 'ELISABET CHANNEL🗣️𑁯'
+global.namechannel = 'ELIZABETH CHANNEL🗣️𑁯'
 
 //*─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─✰─ׄ─ׅ─ׄ─*
 

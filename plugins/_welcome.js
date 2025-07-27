@@ -2,8 +2,8 @@ import { WAMessageStubType } from '@whiskeysockets/baileys'
 import fetch from 'node-fetch'
 
 const channelRD = {
-  id: "120363400360651198@newsletter", // Cambia por tu canal si quieres
-  name: "MAKIMA - CHANNEL"
+  id: "120363418542108786@newsletter", // Cambia por tu canal si quieres
+  name: "ELISABET - Me🔥"
 };
 
 export async function before(m, { conn, participants, groupMetadata }) {
@@ -52,11 +52,11 @@ export async function before(m, { conn, participants, groupMetadata }) {
     const bienvenida = `
 💎 WELCOME - USER 💎
 
-🩵 Usuario: ${user}
-🩵 Grupo: ${groupMetadata.subject}
-🩵 Miembros: ${total}
+⚡ Usuario: ${user}
+⚡ Grupo: ${groupMetadata.subject}
+⚡ Miembros: ${total}
 
-⌬ Usa *#help* para ver los comandos disponibles
+⌬ Usa *#help* para invocar a ELISABETH ⚡
 `
     // Mensaje de bienvenida como newsletter
     await conn.sendMessage(m.chat, { 
@@ -75,9 +75,9 @@ export async function before(m, { conn, participants, groupMetadata }) {
     const despedida = `
 💎 ADIOS - USER 💎
 
-🩵 Usuario: ${user}
-🩵 Grupo: ${groupMetadata.subject}
-🩵 Miembros: ${total}
+⚡ Usuario: ${user}
+⚡ Grupo: ${groupMetadata.subject}
+⚡ Miembros: ${total}
 
 ⌬ Espero y vuelvas después.
 `
@@ -89,8 +89,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
     });
     // Segundo mensaje, respondiendo a 《✧》 SE FUE
     await conn.sendMessage(m.chat, { 
-      text: 'SE NOS FUE EL USUARIO', 
+      text: 'SE NOS FUE UN USUARIO', 
       contextInfo: contextNewsletter
-    }, { quoted: quotedMsg('《✧》 SE FUE GAY XD') });
+    }, { quoted: quotedMsg('《✧》 SE FUE UN GAY XD') });
   }
 }

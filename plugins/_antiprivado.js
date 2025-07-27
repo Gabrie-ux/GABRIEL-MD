@@ -32,7 +32,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }
         user.warnPrivado = 0;
 
         await conn.sendMessage(m.chat, {
-          text: `¡Hey! *Se acabo el tiempo.*\n\n🩵 @${m.sender.split('@')[0]}, ya usaras a makimaBotMD...\n\n✨ Puedes volver a usar mis cmds.`,
+          text: `¡Hey! *Se acabo el tiempo.*\n\n🩵 @${m.sender.split('@')[0]}, ya usaras a ELISABETBotMD...\n\n✨ Puedes volver a usar mis cmds.`,
           mentions: [m.sender]
         });
       } else {

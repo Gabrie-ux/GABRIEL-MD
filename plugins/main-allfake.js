@@ -30,16 +30,16 @@ console.log(`Error : ${e}`)
 //creador y otros
 global.creador = 'Wa.me/18293142989'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.asistencia = 'Wa.me/18293142989'
-global.namechannel = '⏤͟͞ू⃪  ̸̷͢𝐌𝐚𝐤𝐢𝐦𝐚 ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ'
-global.namegrupo = '⏤͟͞ू⃪  ̸̷͢𝐌𝐚𝐤𝐢𝐦𝐚 ☦︎ 𝐆𝐫𝐮𝐩𝐨𑁯ᰍ'
+global.asistencia = 'Wa.me/18093899905'
+global.namechannel = '⏤͟͞ू⃪  ̸̷͢Elizabeth ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ'
+global.namegrupo = '⏤͟͞ू⃪  ̸̷͢Elizabeth ☦︎ 𝐆𝐫𝐮𝐩𝐨𑁯ᰍ'
 global.namecomu = 'Deymoon Club'
 global.listo = '🩵 *Aquí tienes ᕕ( ᐛ )ᕗ*'
 
 //Ids channel
-global.idchannel = '120363400360651198@newsletter'
-global.canalIdM = ["120363400360651198@newsletter", "120363418804796632@newsletter"]
-global.canalNombreM = ["⏤͟͞ू⃪  ̸̷͢𝐌𝐚𝐤𝐢𝐦𝐚 ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ", "🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬𝐂h҉a҉n҉n̸e҉l҉⋆͙̈么͟͞──"]
+global.idchannel = '120363418542108786@newsletter'
+global.canalIdM = ["120363418542108786@newsletter", "120363418542108786@newsletter"]
+global.canalNombreM = ["⏤͟͞ू⃪  ̸̷͢Elizabeth ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ", "Elizabeth Channel"]
 global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
@@ -56,10 +56,10 @@ global.done = '✅'
 global.error = '❌'
 
 //Emojis determinado de MakimaBot 
-global.emoji = '🩵'
-global.emoji2 = '💎'
-global.emoji3 = '🩵'
-global.emoji4 = '💎'
+global.emoji = '🔰'
+global.emoji2 = '📛'
+global.emoji3 = '🔰'
+global.emoji4 = '📛'
 global.emojis = [emoji, emoji2, emoji3, emoji4].getRandom()
 
 

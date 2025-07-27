@@ -18,7 +18,7 @@ let handler = async function (m, { conn }) {
   const channelRD = { id: "120363418542108786@newsletter", name: "AVISO DE MI CREADOR" }
   
   // El mensaje que TÚ quieras (puedes cambiarlo)
-  let mensaje = "「🚨」Debido a que eliminaste tu registro en la bot, ya no podrás usar la mayoría de sus funciones🗣️."
+  let mensaje = "「🚨」Debido a que eliminaste tu registro en la bot,ya no podras usar sus funciones registrate🗣️."
 
   // Envía el mensaje simulado como reenviado desde el canal
   await conn.sendMessage(m.chat, {

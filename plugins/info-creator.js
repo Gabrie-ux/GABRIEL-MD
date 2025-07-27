@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
   let numberBot = '+549381241-5143' // Número del bot
   let nombreBot = 'BOT OFICIAL'
 
-  let numbergabriek = '573133374132'
+  let numbergabriel = '51941247696'
   let nombregabriel = 'gabriel'
 
   // vCards individuales
@@ -38,7 +38,7 @@ TEL;waid=${numberYoSoyYo}:${numberYoSoyYo}
 END:VCARD`
 
   // Envía el canal como texto
-  await conn.sendMessage(m.chat, { text: `💙 AQUI ESTA EL NUMERO DE MI CREADOR Y MÁS CONTACTOS` }, { quoted: m })
+  await conn.sendMessage(m.chat, { text: `😼 AQUI ESTA EL NUMERO DE MI CREADOR Y MÁS CONTACTOS` }, { quoted: m })
 
   // Envía la tarjeta de contacto con los tres contactos
   await conn.sendMessage(m.chat, {

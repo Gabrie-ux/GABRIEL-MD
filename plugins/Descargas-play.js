@@ -16,22 +16,22 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 
     const body = `*┏━━━━━━━━━━━━━━━━━⬣*
-*┃ 💎 MAKIMA - PLAY 💎*
+*┃ 🎶 ELISABET - PLAY 🎶*
 *┗━━━━━━━━━━━━━━━━━⬣*
 
-🩵 *TÍTULO:* 
+⚡ *TÍTULO:* 
 » ${videoInfo.title}
 
-🩵 *CANAL:* 
+⚡ *CANAL:* 
 » ${videoInfo.author.name}
 
-🩵 *DURACIÓN:* 
+⚡ *DURACIÓN:* 
 » ${videoInfo.timestamp}
 
-🩵 *PUBLICADO:* 
+⚡ *PUBLICADO:* 
 » ${videoInfo.ago}
 
-🩵 *VISTAS:* 
+⚡ *VISTAS:* 
 » ${videoInfo.views.toLocaleString()} 
 
 > 💎 *Selecciona una opción para descargar:*`;
@@ -41,7 +41,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       {
         image: { url: videoInfo.thumbnail },
         caption: body,
-        footer: '🩷 ᴍᴀᴋɪᴍᴀ ʙᴏᴛ ✨| ᴘʟᴀʏ',
+        footer: '🩷 Elisabet bot ✨| ᴘʟᴀʏ',
         buttons: [
           { buttonId: `.ytmp3 ${videoInfo.url}`, buttonText: { displayText: 'ᴀᴜᴅɪᴏ' } },
           { buttonId: `.play2 ${videoInfo.url}`, buttonText: { displayText: 'ᴠɪᴅᴇᴏ' } },

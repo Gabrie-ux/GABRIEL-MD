@@ -11,13 +11,13 @@ const handler = async (m, { conn }) => {
 
     await conn.sendMessage('120363400360651198@newsletter', {
       image: { url: memeUrl },
-      caption: '「🩵」 *MEME PARA TI*\n\n> Makima Bot MD',
+      caption: '「⚡」 *MEME PARA TI*\n\n> Elisabet Bot MD',
     });
 
-    m.reply('「🩵」 Meme enviado al canal con éxito...');
+    m.reply('「⚡」 Meme enviado al canal con éxito...');
   } catch (e) {
     console.error(e);
-    m.reply('「🩵」No pude enviar el meme porque no soy admin del canal.');
+    m.reply('「⚡」No pude enviar el meme porque no soy admin del canal.');
   }
 };
 

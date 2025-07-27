@@ -65,13 +65,13 @@ let handler = async function (m, { conn, text, args, usedPrefix, command }) {
 https://whatsapp.com/channel/0029VbAa5sNCsU9Hlzsn651S
 ╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬▭╝
 
-> © Powered by Félix Manuel`
+> © Powered by Gabriel ofc`
 
   await conn.sendMessage(m.chat, {
         text: regbot,
         contextInfo: {
             externalAdReply: {
-                title: '⊱『🩵𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥🔥』⊰',
+                title: '⊱『⚡𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥🔥』⊰',
                 thumbnailUrl: 'https://files.catbox.moe/445fzg.jpg',
                 mediaType: 1,
                 renderLargerThumbnail: true
@@ -79,7 +79,7 @@ https://whatsapp.com/channel/0029VbAa5sNCsU9Hlzsn651S
         }
     }, { quoted: m });
 
-/*    await m.react('🩵')
+/*    await m.react('⚡')
   await conn.sendMessage(m.chat, {
            text: regbot, 
         contextInfo: {
@@ -106,7 +106,7 @@ let chtxt = `👤 *𝖴𝗌uario* » ${m.pushName || 'Anónimo'}
         text: chtxt,
         contextInfo: {
             externalAdReply: {
-                title: "【 🩵 𝐍𝐔𝐄𝐕𝐎 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 🩵 】",
+                title: "【 ⚡ 𝐍𝐔𝐄𝐕𝐎 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 ⚡ 】",
                 body: '𝚁𝚎𝚐𝚒𝚜𝚝𝚛𝚘𝚜 𝙼𝚊𝚔𝚒𝚖𝚊 2.0 𝙱𝚘𝚝',
                 thumbnailUrl: perfil,
                 sourceUrl: redes,

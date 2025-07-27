@@ -259,8 +259,6 @@ await delay(time)
 
 m.exp += Math.ceil(Math.random() * 10)
 
-let usedPrefix
-
 async function getLidFromJid(id, conn) {
 if (id.endsWith('@lid')) return id
 const res = await conn.onWhatsApp(id).catch(() => [])
@@ -279,6 +277,10 @@ const isAdmin = isRAdmin || user?.admin === "admin"
 const isBotAdmin = !!bot?.admin
 
 const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './plugins')
+
+// Mover la declaración de usedPrefix aquí para que siempre esté disponible en el ámbito del handler
+let usedPrefix = ''; // Inicializarlo aquí
+
 for (let name in global.plugins) {
 let plugin = global.plugins[name]
 if (!plugin)
@@ -337,7 +339,7 @@ continue
 }
 if (typeof plugin !== 'function')
 continue
-if ((usedPrefix = (match[0] || '')[0])) {
+if ((usedPrefix = (match[0] || '')[0])) { // usedPrefix ahora se asigna, no se declara aquí
 let noPrefix = m.text.replace(usedPrefix, '')
 let [command, ...args] = noPrefix.trim().split` `.filter(v => v)
 args = args || []
@@ -388,41 +390,41 @@ let adminMode = global.db.data.chats[m.chat].modoadmin
 let mini = `${plugins.botAdmin || plugins.admin || plugins.group || plugins || noPrefix || hl ||  m.text.slice(0, 1) == hl || plugins.command}`
 if (adminMode && !isOwner && !isROwner && m.isGroup && !isAdmin && mini) return   
 if (plugin.rowner && plugin.owner && !(isROwner || isOwner)) { 
-fail('owner', m, this)
+fail('owner', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.rowner && !isROwner) { 
-fail('rowner', m, this)
+fail('rowner', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.owner && !isOwner) { 
-fail('owner', m, this)
+fail('owner', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.mods && !isMods) { 
-fail('mods', m, this)
+fail('mods', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.premium && !isPrems) { 
-fail('premium', m, this)
+fail('premium', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.group && !m.isGroup) { 
-fail('group', m, this)
+fail('group', m, this, usedPrefix, command) 
 continue
 } else if (plugin.botAdmin && !isBotAdmin) { 
-fail('botAdmin', m, this)
+fail('botAdmin', m, this, usedPrefix, command) 
 continue
 } else if (plugin.admin && !isAdmin) { 
-fail('admin', m, this)
+fail('admin', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.private && m.isGroup) {
-fail('private', m, this)
+fail('private', m, this, usedPrefix, command) 
 continue
 }
 if (plugin.register == true && _user.registered == false) { 
-fail('unreg', m, this)
+fail('unreg', m, this, usedPrefix, command) 
 continue
 }
 m.isCommand = true
@@ -473,6 +475,8 @@ text = text.replace(new RegExp(key, 'g'), 'Administrador')
 m.reply(text)
 }
 } finally {
+// El bloque finally siempre se ejecuta, incluso si usedPrefix no ha sido definido
+// Asegúrate de que cualquier uso de usedPrefix aquí sea seguro o maneje el caso en que no exista.
 if (typeof plugin.after === 'function') {
 try {
 await plugin.after.call(this, m, extra)
@@ -482,11 +486,16 @@ console.error(e)
 if (m.coin)
 conn.reply(m.chat, `❮✦❯ Utilizaste ${+m.coin} ${moneda}`, m)
 }
-break
-}}
+break // Este break debería estar fuera del finally si quieres que el loop siga
+// O sea, si un plugin lanza un error, break termina el loop, si no, el loop continua.
+// Si el break está dentro del if ((usedPrefix = (match[0] || '')[0])), entonces solo se rompe si se encuentra un comando.
+// Considerando que el error se da en el finally, la lógica parece ser que el loop de plugins no siempre se rompe.
+}} // Este cierre de llave pertenece al for...in global.plugins
+
 } catch (e) {
 console.error(e)
 } finally {
+// usedPrefix está disponible aquí porque se declaró más arriba en el scope del handler
 if (opts['queque'] && m.text) {
 const quequeIndex = this.msgqueque.indexOf(m.id || m.key.id)
 if (quequeIndex !== -1)
@@ -534,7 +543,10 @@ stat.lastSuccess = now
 try {
 if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
 } catch (e) { 
-console.log(m, m.quoted, e)}
+console.log(m, m.quoted, e)} // <<< Esta es la línea 338, aquí 'usedPrefix' NO se usa directamente,
+                                // pero si 'print.js' o 'm' (con su propiedad 'usedPrefix')
+                                // la causan, entonces el problema es en el scope de esas.
+                                // La solución de mover 'let usedPrefix' resolverá esto.
 let settingsREAD = global.db.data.settings[this.user.jid] || {}  
 if (opts['autoread']) await this.readMessages([m.key])
 
@@ -545,37 +557,38 @@ if (!m.fromMe) return this.sendMessage(m.chat, { react: { text: emot, key: m.key
 function pickRandom(list) { return list[Math.floor(Math.random() * list.length)]}
 }}
 
-global.dfail = (type, m, usedPrefix, command, conn) => {
+global.dfail = (type, m, conn, usedPrefix, command) => { // 'conn' es el tercer argumento
 
-let edadaleatoria = ['10', '28', '20', '40', '18', '21', '15', '11', '9', '17', '25'].getRandom()
-let user2 = m.pushName || 'Anónimo'
-let verifyaleatorio = ['registrar', 'reg', 'verificar', 'verify', 'register'].getRandom()
+    let edadaleatoria = ['10', '28', '20', '40', '18', '21', '15', '11', '9', '17', '25'].getRandom()
+    let user2 = m.pushName || 'Anónimo'
+    let verifyaleatorio = ['registrar', 'reg', 'verificar', 'verify', 'register'].getRandom()
 
-const msg = {
-  rowner: '「🩵」Este comando solo puede ser usado por mi creador.\n\n> Félix Manuel',
-  owner:  '「💎」Este comando solo puede ser usado por mi creador',
-  premium: '「🩵」 Este comando solo puede ser usado por los usuarios premiums.',
-  private: '「💎」Este comando solo puede ser usado en chats privados.',
-  admin: '「🩵」Este comando solo puede ser usado por admins.',
-  botAdmin: '「💎」Para usar este comando, debo ser admin del grupo.',
-  unreg: '「🩵」¡Hey! no estas registrado, registrate para usar mis comandos\n\n/Reg nombre.edad\n\n! Ejemplo: _/Reg Félix.14_',
-  restrict: '「💎」Este comando fue desactivado por mi Creador\n\n> Félix Manuel.'
-}[type];
+    const msg = {
+        rowner: '「🩵」Este comando solo puede ser usado por mi creador.\n\n> Félix Manuel',
+        owner: '「💎」Este comando solo puede ser usado por mi creador',
+        premium: '「🩵」 Este comando solo puede ser usado por los usuarios premiums.',
+        private: '「💎」Este comando solo puede ser usado en chats privados.',
+        admin: '「🩵」Este comando solo puede ser usado por admins.',
+        botAdmin: '「💎」Para usar este comando, debo ser admin del grupo.',
+        unreg: '「🩵」¡Hey! no estas registrado, registrate para usar mis comandos\n\n/Reg nombre.edad\n\n! Ejemplo: _/Reg Félix.14_',
+        restrict: '「💎」Este comando fue desactivado por mi Creador\n\n> Félix Manuel.'
+    }[type];
 
-if (msg) 
-  return m.reply(msg, null, { contextInfo: fake }).then(() => m.react('✖️'))
+    if (msg)
+        return conn.reply(m.chat, msg, m, { contextInfo: fake }).then(() => conn.sendMessage(m.chat, { react: { text: '✖️', key: m.key } }))
 
-let file = global.__filename(import.meta.url, true)
-watchFile(file, async () => {
-  unwatchFile(file)
-  console.log(chalk.magenta("Se actualizo 'handler.js'"))
+    let file = global.__filename(import.meta.url, true)
+    watchFile(file, async () => {
+        unwatchFile(file)
+        console.log(chalk.magenta("Se actualizo 'handler.js'"))
 
-  if (global.conns && global.conns.length > 0) {
-    const users = [...new Set([...global.conns
-      .filter(conn => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED)
-      .map(conn => conn)])]
-    for (const userr of users) {
-      userr.subreloadHandler(false)
-    }
-  }
-})
+        if (global.conns && global.conns.length > 0) {
+            const users = [...new Set([...global.conns
+                .filter(conn => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED)
+                .map(conn => conn)])]
+            for (const userr of users) {
+                userr.subreloadHandler(false)
+            }
+        }
+    })
+}

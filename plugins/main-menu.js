@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
   try {
     // Inicializamos el banner y el nombre por sesión si no existen
     if (!global.bannerUrls[conn.user.jid]) {
-      global.bannerUrls[conn.user.jid] = 'https://qu.ax/XkPVZ.jpg'; // URL inicial de la imagen del menú
+      global.bannerUrls[conn.user.jid] = 'https://files.catbox.moe/y3gmmd.png'; // URL inicial de la imagen del menú
     }
     if (!global.botNames[conn.user.jid]) {
       global.botNames[conn.user.jid] = 'ELISABET⚡'; // Nombre inicial del bot

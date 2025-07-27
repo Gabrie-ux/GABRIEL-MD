@@ -60,7 +60,7 @@ var handler = async (m, { conn }) => {
 ┃💎 *Experiencia:* ${exp}
 ┃💎 *Rango:* ${role}
 ╰━━━━━━━━━━━━━
-> © Desarrollado por Félix 
+> © Desarrollado por Gabriel 
 `.trim()
 
   // 🔥 Usuarios Premium

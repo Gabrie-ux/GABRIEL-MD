@@ -6,8 +6,8 @@ const img = 'https://qu.ax/dXOUo.jpg'
 
 // Canal info (personaliza aquí)
 const canalName = 'ECONOMIA DEL USUARIO'
-const canalDesc = 'MAKIMA 2.0 CHANNEL'
-const canalUrl = 'https://whatsapp.com/channel/120363400360651198'
+const canalDesc = 'ELIZABETH 2.0 CHANNEL'
+const canalUrl = 'https://whatsapp.com/channel/120363418542108786'
 const dev = 'Gabriel ofc'
 
 function obtenerRango(level) {

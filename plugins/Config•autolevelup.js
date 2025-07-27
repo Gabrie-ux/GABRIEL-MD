@@ -11,7 +11,7 @@ return !0
 let before = user.level * 1
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 if (before !== user.level) {
-m.reply(`💎 F E L I C I D A D E S 💎\n\noye ${nombre} Alcanzaste un nuevo nivel por usar a Makima\n\n💫 Nivel Actual » *${user.level}*\n🌵 Rango » *${user.role}*\n📆 Fecha » *${moment.tz('America/Bogota').format('DD/MM/YY')}*\n\n> *\`Interactúa más con la bot para ganar más niveles.\`*
+m.reply(`💎 F E L I C I D A D E S 💎\n\noye ${nombre} Alcanzaste un nuevo nivel por usar a elisabet\n\n💫 Nivel Actual » *${user.level}*\n🌵 Rango » *${user.role}*\n📆 Fecha » *${moment.tz('America/Bogota').format('DD/MM/YY')}*\n\n> *\`Interactúa más con la bot para ganar más niveles.\`*
 `.trim())
     }
 } 

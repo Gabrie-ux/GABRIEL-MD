@@ -30,27 +30,27 @@ let handler = async (m, { conn, usedPrefix }) => {
   let speed = neww - old;
 
   // Mensaje principal
-  let makimabot= `
+  let elisabetmabot= `
 ╭━━━━◇◇◇━━━━⬣
 ┃ ESTADO DE LA BOT 
-┃ MAKIMA 2.0 BOT
+┃ ELISABET 2.0 BOT
 ╰━━━━◇◇◇━━━━⬣
 
-🩵 *Creador:* Félix Manuel 
-🩵 *Prefijo:* [ ${usedPrefix} ]
-🩵 *Versión:* ${vs}
+⚡ *Creador:* ANGEL GABRIEL 
+⚡ *Prefijo:* [ ${usedPrefix} ]
+⚡ *Versión:* ${vs}
 
-🩵 *Usuarios registrados:* ${totalreg}
-🩵 *Total de chats:* ${chats.length}
-🩵 *Grupos:* ${groupsIn.length}
-🩵 *Privados:* ${chats.length - groupsIn.length}
-🩵 *SubBots activos:* ${totalUsers || '0'}
+⚡ *Usuarios registrados:* ${totalreg}
+⚡ *Total de chats:* ${chats.length}
+⚡ *Grupos:* ${groupsIn.length}
+⚡ *Privados:* ${chats.length - groupsIn.length}
+⚡ *SubBots activos:* ${totalUsers || '0'}
 
-🩵 *Actividad:* ${muptime}
-🩵 *Velocidad:* ${(speed * 1000).toFixed(0) / 1000}s
+⚡ *Actividad:* ${muptime}
+⚡ *Velocidad:* ${(speed * 1000).toFixed(0) / 1000}s
 `.trim();
 
-  await conn.sendFile(m.chat, pp, 'estado.jpg', makimabot, fkontak, null, fake);
+  await conn.sendFile(m.chat, pp, 'estado.jpg', Elisabetbot, fkontak, null, fake);
 };
 
 handler.help = ['status'];

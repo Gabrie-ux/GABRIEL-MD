@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       global.bannerUrls[conn.user.jid] = 'https://qu.ax/XkPVZ.jpg'; // URL inicial de la imagen del menú
     }
     if (!global.botNames[conn.user.jid]) {
-      global.botNames[conn.user.jid] = 'ELISABET'; // Nombre inicial del bot
+      global.botNames[conn.user.jid] = 'ELISABET⚡'; // Nombre inicial del bot
     }
 
     // Verificar si el usuario es el socket activo

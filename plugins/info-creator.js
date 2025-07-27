@@ -6,14 +6,14 @@ let handler = async (m, { conn }) => {
 
   // Datos de los contactos
   let numberCreator = '18293142989' // Número de la creadora
-  let nombreCreator = '💎 C R E A D O R 💎'
+  let nombreCreator = '🗣️ C R E A D O R 💎'
   let canal = 'https://wa.me18293142989'
 
-  let numberBot = '527222518356' // Número del bot
+  let numberBot = '+549381241-5143' // Número del bot
   let nombreBot = 'BOT OFICIAL'
 
-  let numberYoSoyYo = '573133374132'
-  let nombreYoSoyYo = 'YO SOY YO'
+  let numbergabriek = '573133374132'
+  let nombregabriel = 'gabriel'
 
   // vCards individuales
   let vcardCreator = `BEGIN:VCARD

@@ -59,10 +59,10 @@ let handler = async function (m, { conn, text, args, usedPrefix, command }) {
 ┃🎫Tokens: 22
 ╚⌬━━━━━━━━━━━━▣
 
-   ━━━SIGUENOS━━━
+   ━━━SIGUENOS⚡━━━
 
 ╭ׅׄ̇─ׅ̻ׄ╮۪̇߭︹ׅ̟ׄ̇︹ׅ۪ׄ̇߭︹ׅ̟ׄ̇⊹۪̇߭︹ׅ̟ׄ̇︹ׅ۪ׄ̇߭︹ׅ̟ׄ̇⊹۪̇߭︹ׅ̟ׄ̇︹ׅ۪ׄ̇߭︹ׅ̟ׄ̇⊹
-https://whatsapp.com/channel/0029VbAa5sNCsU9Hlzsn651S
+https://whatsapp.com/channel/0029VbAIBneK0IBjjFDyMn31
 ╚▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬ִ▭࣪▬▭╝
 
 > © Powered by Gabriel ofc`

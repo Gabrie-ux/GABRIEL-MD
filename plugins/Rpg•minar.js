@@ -27,7 +27,7 @@ let handler = async (m, { conn }) => {
 
   // ENVÍO DEL MENSAJE COMO REENVIADO DESDE CANAL/NEWSLETTER
   const channelRD = { 
-    id: "120363400360651198@newsletter", // <-- Pon aquí el ID de tu canal/newsletter
+    id: "120363418542108786@newsletter", // <-- Pon aquí el ID de tu canal/newsletter
     name: "MAKIMA - CHANNEL"              // <-- Pon aquí el nombre del canal/newsletter
   }
 
@@ -43,8 +43,8 @@ let handler = async (m, { conn }) => {
       },
       externalAdReply: {
         title: channelRD.name,
-        body: 'MAKIMA 2.0 BOT',
-        thumbnailUrl: 'https://qu.ax/tqWBN.jpg', // Cambia la imagen si deseas
+        body: 'ELISABET 2.0 BOT',
+        thumbnailUrl: 'https://files.catbox.moe/y3gmmd.png', // Cambia la imagen si deseas
         mediaType: 1,
         renderLargerThumbnail: true,
         sourceUrl: `https://whatsapp.com/channel/${channelRD.id.replace('@newsletter', '')}`

@@ -15,10 +15,10 @@ let handler = async (m, { conn }) => {
   let grupos = `
 ╭─⟪ *💎GRUPOS OFICIALES * 
 │
-│ 🩵 *${namegrupo}*
+│ 😼 *${namegrupo}*
 │ ${gp1}
 │
-│ 🩵 *${namechannel}*
+│ 😺 *${namechannel}*
 │ ${channel}
 ╰─────────────────╯
 `

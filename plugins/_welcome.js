@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 
 const channelRD = {
   id: "120363418542108786@newsletter", // Cambia por tu canal si quieres
-  name: "ELISABET - Me🔥"
+  name: "ELISABET - Md"
 };
 
 export async function before(m, { conn, participants, groupMetadata }) {
@@ -16,7 +16,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   const jid = m.messageStubParameters[0]
   const user = `@${jid.split('@')[0]}`
-  const thumbnailUrl = 'https://qu.ax/dXOUo.jpg'
+  const thumbnailUrl = 'https://files.catbox.moe/y3gmmd.png'
   const pp = await conn.profilePictureUrl(jid, 'image').catch(() => thumbnailUrl)
   const img = await fetch(pp).then(r => r.buffer())
   const total = [28, 32].includes(m.messageStubType)
@@ -34,7 +34,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
     },
     externalAdReply: {
       title: channelRD.name,
-      body: 'MAKIMA 2.0 BOT',
+      body: 'ELIZABETH 2.0 BOt',
       thumbnailUrl: thumbnailUrl,
       mediaType: 1,
       renderLargerThumbnail: false,

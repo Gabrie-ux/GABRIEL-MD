@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
 
 📔 *INFO:* Si se rompen las reglas, puedes ser baneado y bloqueado del bot.
 
-📝 *NOTA:* Este bot es makima*. No nos responsabilizamos por otros bots.
+📝 *NOTA:* Este bot es elisabet*. No nos responsabilizamos por otros bots.
 
 🌟 Si te gusta el bot, puedes visitar el repositorio y dejar una estrella.
 ${global.md || 'https://github.com/mantis-has/Makima'}  

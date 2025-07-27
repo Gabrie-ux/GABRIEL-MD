@@ -36,7 +36,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ┃ ELISABET 2.0 BOT
 ╰━━━━◇◇◇━━━━⬣
 
-⚡ *Creador:* ANGEL GABRIEL 
+⚡ *Creador:* gabriel-ofc 
 ⚡ *Prefijo:* [ ${usedPrefix} ]
 ⚡ *Versión:* ${vs}
 

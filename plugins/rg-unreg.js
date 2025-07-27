@@ -34,7 +34,7 @@ let handler = async function (m, { conn }) {
       externalAdReply: {
         title: channelRD.name,
         body: 'ELIZABETH - md',
-        thumbnailUrl: 'https://qu.ax/wXgkR.jpg', // Opcional, cámbiala si quieres
+        thumbnailUrl: 'https://qu.ax/GszaU.png', // Opcional, cámbiala si quieres
         mediaType: 1,
         renderLargerThumbnail: true,
       }

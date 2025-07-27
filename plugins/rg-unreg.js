@@ -9,16 +9,16 @@ let handler = async function (m, { conn }) {
 
   user.registered = false
   m.reply(`
-「🩵」 *Registro eliminado.*
+「⚡」 *Registro eliminado.*
 
 《✧》Ya no podrás usar mis comandos.
 `)
 
   // Datos del canal/newsletter (para el efecto de reenviado)
-  const channelRD = { id: "120363400360651198@newsletter", name: "AVISO DE MI CREADOR" }
+  const channelRD = { id: "120363418542108786@newsletter", name: "AVISO DE MI CREADOR" }
   
   // El mensaje que TÚ quieras (puedes cambiarlo)
-  let mensaje = "「🚨」Debido a que eliminaste tu registro en la bot, ya no podrás usar la mayoría de sus funciones."
+  let mensaje = "「🚨」Debido a que eliminaste tu registro en la bot, ya no podrás usar la mayoría de sus funciones🗣️."
 
   // Envía el mensaje simulado como reenviado desde el canal
   await conn.sendMessage(m.chat, {
@@ -33,7 +33,7 @@ let handler = async function (m, { conn }) {
       forwardingScore: 999,
       externalAdReply: {
         title: channelRD.name,
-        body: 'MAKIMA - FRASES',
+        body: 'ELIZABETH - md',
         thumbnailUrl: 'https://qu.ax/wXgkR.jpg', // Opcional, cámbiala si quieres
         mediaType: 1,
         renderLargerThumbnail: true,

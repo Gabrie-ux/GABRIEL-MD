@@ -22,7 +22,7 @@ const handler = async (m, {conn, command, args}) => {
     global.db.data.userRents = userRents;
 
     conn.reply(m.chat, `
-┌─『 Rentar a Makima Bot   』*
+┌─『 Rentar a ELISABET Bot   』*
 │╭──────────────┄
 ││ *Compra Nominal* : + ${count} Token
 ││ *Gastado* : -${xpperestrellas * count} Estrellas 🌟

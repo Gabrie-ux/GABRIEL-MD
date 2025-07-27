@@ -54,7 +54,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       const redes = 'https://github.com/Andresv27728/2.0';
       const channelRD = { id: "120363418542108786@newsletter", name: "ELISABET -MD" };
       let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-      let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.catbox.moe/mqtxvp.jpg');
+      let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://files.catbox.moe/y3gmmd.png');
 
       // Mensaje de "CARGANDO COMANDOS..." con contexto de canal y respondiendo al mensaje
       await conn.sendMessage(m.chat, {
@@ -367,7 +367,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 ╰━━━━━━━━━━━━━━━━━━
 
 
-> © ⍴᥆ᥕᥱrᥱძ ᑲᥡ Félix Manuel`.trim(); // El resto del menú permanece igual
+> © ⍴᥆ᥕᥱrᥱძ ᑲᥡ Gabriel-ofc`.trim(); // El resto del menú permanece igual
 
       // Enviar el menú con el banner y nombre específico para esta sesión y respondiendo al mensaje
       await conn.sendMessage(m.chat, {
@@ -383,7 +383,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
           },
           forwardingScore: 999,
           externalAdReply: {
-            title: '𝐌A͜͡𝑲𝑖𝐌ꪖ  𝐁o͟T͎ 𝙼𝙳',
+            title: 'ELIZABETH ⚡ 𝐁o͟T͎ 𝙼𝙳',
             body: dev,
             thumbnailUrl: perfil,
             sourceUrl: redes,

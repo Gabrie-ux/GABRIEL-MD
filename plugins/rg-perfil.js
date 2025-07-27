@@ -78,7 +78,7 @@ ERES RECONOCIDO EN DENJI』
 ┃💥 *Experiencia:* ${exp}
 ┃🔥 *Rango:* ${role}
 ╰━━━━━━━━━━━━━
-> © powered by Félix Manuel 
+> © powered by Gabriel -ofc
 `.trim()
 
   await conn.sendFile(m.chat, pp, 'ponte_una_foto_gay', premium ? prem : noprem, m, undefined, { mentions: [who] })

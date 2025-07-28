@@ -3,11 +3,11 @@ const handler = async (m, { conn }) => {
  _*REPO DE LA BOT*_ 
 
 \`\`\`Repositorio OFC:\`\`\`
-https://github.com/mantis-has/Denji-Bot-MD- 
+(texto)
 
 > 🌟 Deja tu estrella así nos motivas a seguir mejorando la bot.
 
-🔥 *Grupo oficial del bot:* https://chat.whatsapp.com/KoJjHo6o3Ew7P5qkjaIh0r
+🔥 *Grupo oficial del bot:* https://chat.whatsapp.com/Fl22Fx2sMatAe1jDN8lk9y?mode=ac_t
   `.trim()
 
   await conn.reply(m.chat, texto, m)

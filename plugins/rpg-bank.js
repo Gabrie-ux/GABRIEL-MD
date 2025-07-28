@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 import db from '../lib/database.js'
 
-const img = 'https://qu.ax/dXOUo.jpg'
+const img = 'https://qu.ax/UptRc.jpg'
 
 // Canal info (personaliza aquí)
 const canalName = 'ECONOMIA DEL USUARIO'

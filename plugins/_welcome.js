@@ -56,7 +56,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 ⚡ Grupo: ${groupMetadata.subject}
 ⚡ Miembros: ${total}
 
-⌬ Usa *#help* para invocar a ELISABETH ⚡
+⌬ Usa *#help* para invocarme 😺 o te perderás mis maravillosos comandós 🤖
 `
     // Mensaje de bienvenida como newsletter
     await conn.sendMessage(m.chat, { 
@@ -66,9 +66,9 @@ export async function before(m, { conn, participants, groupMetadata }) {
     });
     // Mensaje adicional, respondiendo a 《✧》 LLEGO OTRO
     await conn.sendMessage(m.chat, { 
-      text: 'SE NOS UNIÓ UN USUARIO', 
+      text: 'SE  UNIÓ UN USUARIO 😼', 
       contextInfo: contextNewsletter
-    }, { quoted: quotedMsg('《✧》 LLEGO OTRO MIENBRO DISFRUTA DEL GRUPO') });
+    }, { quoted: quotedMsg('《✧》 LLEGO OTRO MIEMBRO DISFRUTA DEL GRUPO') });
   }
 
   if ([28, 32].includes(m.messageStubType)) {

@@ -3,10 +3,10 @@
 // Créditos: mantis-has (GitHub: https://github.com/mantis-has)
 
 const channelRD = {
-  id: "120363400360651198@newsletter", // Cambia por tu canal si quieres
-  name: "MAKIMA - CHANNEL"
+  id: "120363418542108786@newsletter", // Cambia por tu canal si quieres
+  name: "ELISABET - CHANNEL"
 }
-const thumbnailUrl = 'https://qu.ax/dXOUo.jpg' // Imagen cuadrada y pequeña
+const thumbnailUrl = 'https://qu.ax/GszaU.png' // Imagen cuadrada y pequeña
 
 let handler = async function (m, { args, command, usedPrefix, conn }) {
   if (!args[0]) {
@@ -35,7 +35,7 @@ let handler = async function (m, { args, command, usedPrefix, conn }) {
     await conn.sendMessage(
       m.chat,
       {
-        text: '「🩵」Debes ingresar un texto para usar este comando.',
+        text: '「⚡」Debes ingresar un texto para usar este comando.',
         contextInfo: contextNewsletter
       },
       { quoted: m }

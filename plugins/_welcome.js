@@ -56,7 +56,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
 ⚡ Grupo: ${groupMetadata.subject}
 ⚡ Miembros: ${total}
 
-⌬ Usa *#help* para invocarme 😺 o te perderás mis maravillosos comandós 🤖
+⌬ Usa *#help* para invocarme 😺 o te perderás mis maravillosos comandós 🤖 
+o consulta a mi creador 51941247696 GABRIEL-OFC GRACIAS POR UTILIZAR A ELISABET MD
 `
     // Mensaje de bienvenida como newsletter
     await conn.sendMessage(m.chat, { 

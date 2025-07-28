@@ -57,7 +57,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 ⚡ Miembros: ${total}
 
 ⌬ Usa *#help* para invocarme 😺 o te perderás mis maravillosos comandós 🤖 
-o consulta a mi creador 51941247696 GABRIEL-OFC GRACIAS POR UTILIZAR A ELISABET MD
+
 `
     // Mensaje de bienvenida como newsletter
     await conn.sendMessage(m.chat, { 
@@ -90,7 +90,7 @@ o consulta a mi creador 51941247696 GABRIEL-OFC GRACIAS POR UTILIZAR A ELISABET 
     });
     // Segundo mensaje, respondiendo a 《✧》 SE FUE
     await conn.sendMessage(m.chat, { 
-      text: 'SE NOS FUE UN USUARIO😔', 
+      text: 'SE NOS FUE UN MIEMBRO 😔', 
       contextInfo: contextNewsletter
     }, { quoted: quotedMsg('《✧》 SE FUE UN MIEMBRO ESPERO VUELVAS🥺') });
   }

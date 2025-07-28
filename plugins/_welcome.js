@@ -16,7 +16,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   const jid = m.messageStubParameters[0]
   const user = `@${jid.split('@')[0]}`
-  const thumbnailUrl = 'https://qu.ax/scjmh.jpg'
+  const thumbnailUrl = 'https://qu.ax/UptRc.jpg'
   const pp = await conn.profilePictureUrl(jid, 'image').catch(() => thumbnailUrl)
   const img = await fetch(pp).then(r => r.buffer())
   const total = [28, 32].includes(m.messageStubType)

@@ -91,6 +91,6 @@ export async function before(m, { conn, participants, groupMetadata }) {
     await conn.sendMessage(m.chat, { 
       text: 'SE NOS FUE UN USUARIO😔', 
       contextInfo: contextNewsletter
-    }, { quoted: quotedMsg('《✧》 SE FUE UN GAY XD') });
+    }, { quoted: quotedMsg('《✧》 SE FUE UN MIEMBRO ESPERO VUELVAS🥺') });
   }
 }

@@ -53,8 +53,8 @@ global.wm = '⏤͟͞ू⃪  ̸̷͢𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 ELISABET
 global.titulowm = '⏤͟͞ू⃪ELISABET ⚡𑁯ᰍ';
 global.igfg = 'Deymoon Club'
 global.botname = 'ELISABET ⚡'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ Deymoon Club'
-global.textbot = 'Mak𝐢 : DEYMOON CLUB'
+global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ELISABET COMUNITY😺'
+global.textbot = 'Mak𝐢 : ELISABET COMUNITY'
 global.gt = '͟͞𝐃𝐞𝐧𝐣𝐢';
 global.namechannel = 'ELIZABETH CHANNEL🗣️𑁯'
 

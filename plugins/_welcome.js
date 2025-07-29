@@ -57,7 +57,8 @@ export async function before(m, { conn, participants, groupMetadata }) {
 ⚡ Miembros: ${total}
 
 ⌬ Usa *#help* para invocarme 😺 o te perderás mis maravillosos comandós 🤖 
-
+COMPARTE EL GRUPO
+https://chat.whatsapp.com/DCySgtmIavX6sXgk1aEmA8?mode=ac_t
 `
     // Mensaje de bienvenida como newsletter
     await conn.sendMessage(m.chat, { 

@@ -141,6 +141,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 ┃┈➤ #rcjugador
 ┃┈➤ #rgjugador
 ┃┈➤ #vtjugador
+┃┈➤ #pfp
 ╰━━━━━━━━━━━━━━━━━━
 
 .       ╭ֹ┈ ⵿❀⵿ ┈╮ ㅤ

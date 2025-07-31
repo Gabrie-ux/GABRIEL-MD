@@ -36,7 +36,7 @@
 
 ### `—◉ DESARROLLADORES`
 
-<a href="wa.me/51964351354" target="blank"><img src="https://img.shields.io/badge/DESARROLLADOR_1-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
+<a href="wa.me/51941247696" target="blank"><img src="https://img.shields.io/badge/DESARROLLADOR_1-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 
 <a href="wa.me/+1(829)314-2989" target="blank"><img src="https://img.shields.io/badge/DESARROLLADOR_2-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /></a>
 

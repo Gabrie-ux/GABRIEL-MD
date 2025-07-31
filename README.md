@@ -52,7 +52,7 @@
 </div>
 
 <p align="center">
-<img src="https://files.catbox.moe/pltsos.jpg" width="400" height="400" alt="ABRAHAN-M"/>
+<img src="https://files.catbox.moe/z2nu24.jpg" width="400" height="400" alt="ABRAHAN-M"/>
 <br>
-<strong>ABRAHAN-M</strong>
+<strong>GABRIEL-MD</strong>
 </p>

@@ -5,11 +5,11 @@ let handler = async (m, { conn }) => {
   }
 
   // Datos de los contactos
-  let numberCreator = '18293142989' // Número de la creadora
+  let numberCreator = '51941247696' // Número de la creadora
   let nombreCreator = '🗣️ C R E A D O R 💎'
-  let canal = 'https://wa.me18293142989'
+  let canal = 'https://wa.me51941247696'
 
-  let numberBot = '+549381241-5143' // Número del bot
+  let numberBot = '51964351354' // Número del bot
   let nombreBot = 'BOT OFICIAL'
 
   let numbergabriel = '51941247696'
@@ -38,7 +38,7 @@ TEL;waid=${numberYoSoyYo}:${numberYoSoyYo}
 END:VCARD`
 
   // Envía el canal como texto
-  await conn.sendMessage(m.chat, { text: `😼 AQUI ESTA EL NUMERO DE MI CREADOR Y MÁS CONTACTOS` }, { quoted: m })
+  await conn.sendMessage(m.chat, { text: `😼 AQUI ESTA EL NUMERO DE MI CREADOR MÁS CONTACTOS` }, { quoted: m })
 
   // Envía la tarjeta de contacto con los tres contactos
   await conn.sendMessage(m.chat, {

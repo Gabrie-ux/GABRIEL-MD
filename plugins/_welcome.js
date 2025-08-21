@@ -75,13 +75,13 @@ https://whatsapp.com/channel/0029VbAIBneK0IBjjFDyMn31 😼
 
   if ([28, 32].includes(m.messageStubType)) {
     const despedida = `
-💎 ADIOS - USER 💎
+😿 ASTA SIEMPRE - USER 😫
 
 ⚡ Usuario: ${user}
 ⚡ Grupo: ${groupMetadata.subject}
 ⚡ Miembros: ${total}
 
-⌬ Espero y vuelvas después.
+⌬ Espero y vuelvas después te vamos a extrañar un poquito.
 `
     // Mensaje de despedida como newsletter
     await conn.sendMessage(m.chat, { 

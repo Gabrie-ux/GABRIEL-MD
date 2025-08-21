@@ -50,13 +50,13 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
   if (m.messageStubType == 27) {
     const bienvenida = `
-💎 WELCOME - USER 💎
+💎 BIENVENIDO - USER 💎
 
 ⚡ Usuario: ${user}
 ⚡ Grupo: ${groupMetadata.subject}
 ⚡ Miembros: ${total}
 
-⌬ Usa *#help* para invocarme 😺 o te perderás mis maravillosos comandós 🤖 
+⌬ Usa *#help* PARA QUE PUEDAS ABUSAR DE MIS COMANDOS SOLO FALTAS TU QUE ESPERAS? :3 🥵
 TE INVITO A SEGUIR EL CANAL 
 https://whatsapp.com/channel/0029VbAIBneK0IBjjFDyMn31 😼
 `

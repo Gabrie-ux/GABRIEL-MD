@@ -20,7 +20,7 @@ const tag = await conn.getName(randomUser .id);
 conn.reply(m.chat, `*🌠 Selección Aleatoria: ${tag}*\n> Serás Eliminado`, m, null);
 
 await conn.groupParticipantsUpdate(m.chat, [randomUser .id], 'remove')
-conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🎩`, m, null)
+conn.reply(m.chat, `*${tag}* Fue Eliminado Con Éxito 🥺`, m, null)
     m.react('✅');
 }
 

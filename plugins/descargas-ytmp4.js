@@ -11,7 +11,7 @@ if (!text) return m.reply(`🍭 Ingresa Un Link De YouTube\n> *Ejemplo:* https:/
 m.react(rwait);
 
 
-let video = await (await fetch(`https://api.fgmods.xyz/api/downloader/ytmp4?url=${text}&quality=480p&apikey=elrebelde21`)).json();
+let video = await (await fetch(`https://api.diioffc.web.id/api/download/ytmp4?url=`)).json();
 
 let link = video.result.dl_url;
 

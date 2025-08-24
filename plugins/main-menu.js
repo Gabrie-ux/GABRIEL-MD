@@ -164,6 +164,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 ┃┈➤ #tiktoksearch
 ┃┈➤ #pinterest
 ┃┈➤ #imagen [querry]
+|┈➤ #google [texto]
 ╰━━━━━━━━━━━━━━━━━━
 
 .       ╭ֹ┈ ⵿❀⵿ ┈╮ ㅤ

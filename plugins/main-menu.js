@@ -266,9 +266,9 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 ┃┈➤ #promote
 ┃┈➤ #demote
 ┃┈➤ #tagall 
-┃┈➤ #tag
-┃┈➤ #invite 
+┃┈➤ #invite
 ┃┈➤ #ruletaban
+┃┈➤ #invitar(número) 
 ╰━━━━━━━━━━━━━━━━━━
 
 .       ╭ֹ┈ ⵿❀⵿ ┈╮ ㅤ

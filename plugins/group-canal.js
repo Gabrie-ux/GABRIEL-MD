@@ -8,7 +8,7 @@ let yaNotificados = new Set(
 );
 
 const enviarAvisoCanal = async (conn, notifyChat = null) => {
-  const mensaje = `🦈 *¡Te invitamos a nuestro canal!* 🦈\n\nEste es el canal oficial 📢 de *Gawr Gura*:\n\n👉 https://whatsapp.com/channel/0029Vb5atcVL7UVQwAB9tU2k\n\nSíguelo para estar al tanto de todas las novedades.`;
+  const mensaje = `😎 *¡Te invitamos a nuestro canal!* 🗣️\n\nEste es el canal oficial 📢 de *ELISABET   MD *:\n\n👉 https://whatsapp.com/channel/0029VbAIBneK0IBjjFDyMn31\n\nSíguelo para estar al tanto de todas las novedades.`;
 
   // Ajusta para frameworks que usan conn.chats o conn.store.chats
   const chats = Object.entries(conn.chats || conn.store?.chats || {}).filter(

@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
   try {
     // Inicializamos el banner y el nombre por sesión si no existen
     if (!global.bannerUrls[conn.user.jid]) {
-      global.bannerUrls[conn.user.jid] = 'https://qu.ax/AeYnJ.jpg'; // URL inicial de la imagen del menú
+      global.bannerUrls[conn.user.jid] = 'https://qu.ax/lhBtS.jpg'; // URL inicial de la imagen del menú
     }
     if (!global.botNames[conn.user.jid]) {
       global.botNames[conn.user.jid] = 'ELISABET⚡'; // Nombre inicial del bot
@@ -54,7 +54,7 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
       const redes = 'https://github.com/Andresv27728/2.0';
       const channelRD = { id: "120363418542108786@newsletter", name: "ELISABET -MD" };
       let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
-      let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/AeYnJ.jpg');
+      let perfil = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/lhBtS.jpg');
 
       // Mensaje de "CARGANDO COMANDOS..." con contexto de canal y respondiendo al mensaje
       await conn.sendMessage(m.chat, {

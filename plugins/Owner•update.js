@@ -10,13 +10,17 @@ let handler = async (m, { conn, text}) => {
       return m.reply('✰ Solo el owner principal puede usar este comando.')
 }
 
-    const stdout = execSync('git pull' + (text? ' ' + text: ''))
+    const command = 'git pull' + (text? ' ' + text: '')
+    const stdout = execSync(command)
+
     await conn.reply(m.chat, stdout.toString(), m)
     await m.react(done)
 
 } catch (e) {
     await m.react(error)
-    await m.reply('🩵 Se han hecho cambios locales que entran en conflicto con las actualizaciones del repositorio.\n\n✦ Para actualizar, reinstala el bot o realiza las actualizaciones manualmente.')
+    await m.reply(
+      '🩵 Se han hecho cambios locales que entran en conflicto con las actualizaciones del repositorio.\n\n✦ Para actualizar, reinstala el bot o realiza las actualizaciones manualmente.'
+)
 }
 }
 

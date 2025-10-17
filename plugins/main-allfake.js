@@ -28,7 +28,7 @@ console.log(`Error : ${e}`)
 }}
   
 //creador y otros
-global.creador = 'Wa.me/18293142989'
+global.creador = 'Wa.me/51941247696'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.asistencia = 'Wa.me/18093899905'
 global.namechannel = '⏤͟͞ू⃪  ̸̷͢Elizabeth ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ'
@@ -38,7 +38,7 @@ global.listo = '🩵 *Aquí tienes ᕕ( ᐛ )ᕗ*'
 
 //Ids channel
 global.idchannel = '120363418542108786@newsletter'
-global.canalIdM = ["120363418542108786@newsletter", "120363418542108786@newsletter"]
+global.canalIdM = ["120363420590235387@newsletter", "120363420590235387@newsletter"]
 global.canalNombreM = ["⏤͟͞ू⃪  ̸̷͢Elizabeth ☦︎ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥𑁯ᰍ", "Elizabeth Channel"]
 global.channelRD = await getRandomChannel()
 

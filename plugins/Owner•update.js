@@ -1,32 +1,27 @@
-import { execSync} from 'child_process'
+const { exec} = require('child_process');
 
-let handler = async (m, { conn, text}) => {
-  try {
-    await m.react(rwait)
-
-    const isOwner = global.owner.some(([id]) => m.sender.includes(id))
-    if (!isOwner) {
-      await m.react(error)
-      return m.reply('✰ Solo el owner principal puede usar este comando.')
+let handler = async (m, { conn, isOwner, command}) => {
+  if (!isOwner) {
+    return conn.reply(m.chat, '🚫 Este comando solo puede usarlo el propietario del bot.', m);
 }
 
-    const command = 'git pull' + (text? ' ' + text: '')
-    const stdout = execSync(command)
+  conn.reply(m.chat, '🔄 Actualizando el bot desde el repositorio remoto...', m);
 
-    await conn.reply(m.chat, stdout.toString(), m)
-    await m.react(done)
-
-} catch (e) {
-    await m.react(error)
-    await m.reply(
-      '🩵 Se han hecho cambios locales que entran en conflicto con las actualizaciones del repositorio.\n\n✦ Para actualizar, reinstala el bot o realiza las actualizaciones manualmente.'
-)
-}
+  exec('git pull', (err, stdout, stderr) => {
+    if (err) {
+      return conn.reply(m.chat, `❌ Error al actualizar:\n${stderr}`, m);
 }
 
-handler.help = ['update', 'actualizar']
-handler.tags = ['owner']
-handler.command = ['update', 'actualizar']
-handler.rowner = true
+    conn.reply(m.chat, `✅ Bot actualizado correctamente:\n${stdout}`, m);
 
-export default handler
+    
+    // exec('pm2 restart all');
+});
+};
+
+handler.command = /^update|up|fix$/i; 
+handler.owner = true; 
+handler.tags = ['owner'];          
+handler.help = ['update', 'up', 'fix'];
+
+module.exports = handler;
